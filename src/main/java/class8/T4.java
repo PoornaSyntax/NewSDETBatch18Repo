@@ -9,6 +9,7 @@ public class T4 {
         for(int i=0; i<numbers.length-1;i++){
             if(numbers[i]>numbers[i+1]){
                 isSorted=false;
+                //isSorted is  false
                 break;
             }
 

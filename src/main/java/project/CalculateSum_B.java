@@ -1,6 +1,6 @@
 package project;
 
-public class CalculateSumBikal {
+public class CalculateSum_B {
     public static void main(String[] args) {
         int [][] numbers = {
                 {5, 10, 15, 20, 25},

@@ -1,6 +1,6 @@
 package project;
 
-public class SecondLargestBikal {
+public class SecondLargest_B {
     public static void main(String[] args) {
         int [] num = {4,7,2,32,44,50};
 

@@ -1,6 +1,6 @@
 package project;
 
-public class EvenNumbersBikal {
+public class EvenNumbers_B {
     public static void main(String[] args) {
         int[][] numbers = {
                 {3, 11, 4, 8, 20},

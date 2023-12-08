@@ -1,6 +1,6 @@
 package project;
 
-public class PrimeNumberBikal {
+public class PrimeNumber_B {
     public static void main(String[] args) {
         int num = 13;
         int c = 0;
