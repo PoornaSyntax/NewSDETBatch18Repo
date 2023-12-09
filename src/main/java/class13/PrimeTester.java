@@ -11,8 +11,9 @@ public class PrimeTester {
         System.out.println("Enter an integer number");
         int num = scanner.nextInt();
         PrimeNumber obj=new PrimeNumber();
-        boolean prime = obj.isPrime(num);
-        if (prime){
+         boolean p = obj.isPrime(num);
+
+        if (p){
             System.out.println(num+ " is a prime number");
 
         }

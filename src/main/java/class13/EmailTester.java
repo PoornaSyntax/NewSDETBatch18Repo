@@ -10,6 +10,6 @@ Example:  createEmail(John, Snow, gmail) → johnsnow@gmail.com{
 
     public static void main(String[] args) {
         Email obj = new Email();
-        obj.createEmail("John","Snow","gmail");
+        obj.createEmail("John","Snowobj.","gmail");
     }
 }
