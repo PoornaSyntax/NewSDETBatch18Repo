@@ -19,3 +19,30 @@ UpSide:
    They can be accessed anywhere inside a class other than static methods.
 DownSide:
    They occupy the memory for longer as compared to a local variable.
+
+
+static Variables:
+    Static variables are created using static keyword they are also created outside of
+    blocks of code like methods, loops etc.
+UpSide:
+    we can save a lot of space because for static only one memory location is used
+    for all the objects.
+
+DownSide:
+    It occupies the memory for longest.
+Tasks:
+Create a static method with int return type call it dValue which takes a number as input
+multiplies it by 2 and returns the value.
+
+
+AccessModifiers:
+     Access modifiers in Java help us control who can access what. There are 4 access
+     levels and we use three keywords to control these levels. private, default, protected and public
+Private :
+     Is the most restricted one when used with a variable or method those can't be accessed ouside the class
+Important note:
+     1. 99% of the methods are public.
+     2. 99% of the instance fields are created as private.
+     3. 99% of static fields are public.
+     4. 99% of the time class are also public
+
