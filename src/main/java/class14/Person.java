@@ -13,6 +13,7 @@ public class Person {
 
 
     static void printNoOfEyes(){
+
         System.out.println(noOfEye);
     }
 }
