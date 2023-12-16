@@ -1,0 +1,20 @@
+Methods:
+a block of code that performs a specific action
+when called. In Java methods can only exit inside a
+class. If the method is instance method we need to create
+the object of the class to call if method is static we
+use the name of the class.method.name.
+Benefit :
+  They allow us to reuse code.
+Types of method:
+    1. method with void return type
+    2.methods with specific return types
+
+Task
+Create a method which will take an array of integers as
+input and going to return the sum of all the numbers
+from the input array
+
+How do we know whe we should create a static variable:
+   Whenever we want to store something that is universals(Constants) and
+   it does usually change we can safely go and create a static variable

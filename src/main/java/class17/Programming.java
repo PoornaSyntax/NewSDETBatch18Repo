@@ -19,9 +19,6 @@ public class Programming {
         System.out.println("I love " + str);
     }
 
-
-
-
 }
 
 

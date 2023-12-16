@@ -17,7 +17,8 @@ public class Cat {
     }
 
     public static void main(String[] args) {
-        Cat c = new Cat("Kitti","White",13);
-        c.printInfo();
+//        Cat c = new Cat("Kitti","White",13);
+//        c.printInfo();
+        new Cat("Kitti","White",13).printInfo();
     }
 }

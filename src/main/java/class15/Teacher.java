@@ -22,4 +22,11 @@ public class Teacher {
         System.out.println(name +" " + address);
     }
 
+    public static void main(String[] args) {
+
+          Teacher t = new Teacher("Mary","123 Main St",22);
+          t.printInfo();
+//        new  Teacher("Mary","123,Main st", 22, 120).printInfo();
+//        new  Teacher("Harry" ,"456,Taylor St",26,130).printInfo();
+    }
 }
