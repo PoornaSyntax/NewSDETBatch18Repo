@@ -13,6 +13,7 @@ public class Animal {
         this.weight = weight;
     }
     public void printInfo(){
+
         System.out.println(name+" "+color+" "+age+" "+weight);
     }
 }
@@ -20,10 +21,12 @@ public class Animal {
 class Dog extends Animal{
 
     public Dog(String name, String color, int age, double weight){
+
         super(name,color,age,weight);
     }
 
     public void bark(){
+
         System.out.println("Wuff Wuff");
     }
 }

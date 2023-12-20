@@ -1,6 +1,6 @@
 package homework;
 
-public class Car {
+public class Car1 {
     /*
      Create a class Car with properties like make, model, and year.
      Implement a method calculate_rental_price based on the number of rental days.
@@ -11,15 +11,16 @@ public class Car {
     private String make;
     private String model;
     private int year;
-    public Car(){
+    public Car1(){
 
     }
-    public Car(String make,String model,int year){
+    public Car1(String make,String model,int year){
         this.make = make;
         this.model = model;
         this.year=year;
     }
     public double calcrentalprice(int rentalDays){
+
         return rentalDays*50;//$50 per day
     }
     public String getMake() {
@@ -35,8 +36,9 @@ public class Car {
     }
 
 }
-class LuxuryCar extends Car{
+class LuxuryCar extends Car1{
     public LuxuryCar(String a,String b,int c){
+
         super(a,b,c);
     }
 
@@ -47,9 +49,10 @@ class LuxuryCar extends Car{
 
 }
 
-class EconomyCar extends Car{
+class EconomyCar extends Car1{
     public EconomyCar(String a,String b,int c){
-      super(a,b,c);
+
+        super(a,b,c);
     }
 }
 class CarTester{
