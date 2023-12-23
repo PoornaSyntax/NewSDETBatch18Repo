@@ -36,14 +36,20 @@ Create objects of each type, store them in a list, and perform operations like d
         public void deposit(double amount) {
             balance += amount;
             System.out.println("Deposited: $" + amount);
+            System.out.println("Balance after deposit : $"+balance);
         }
         public void withdraw(double amount) {
             if (amount <= balance) {
                 balance -= amount;
                 System.out.println("Withdrawn: $" + amount);
+                System.out.println("Balance after withdraw : $"+balance);
             } else {
                 System.out.println("Insufficient funds!");
             }
+        }
+
+        public void printInfo(){
+            System.out.println("Name of account holder : "+accountHolderName+" Account no. "+accountNumber+" Current balance : "+balance);
         }
     }
 
@@ -104,7 +110,12 @@ class FixedDepositAccount extends BankAccount {
         this.maturityPeriod = maturityPeriod;
     }
     public void withdraw(double amount) {
-        System.out.println("Withdrawal not allowed from Fixed Deposit Account. Funds are locked until maturity.");
+        if (maturityPeriod > 0) {
+            System.out.println("Withdrawal not allowed from Fixed Deposit Account. Funds are locked until maturity.");
+        } else {
+            super.withdraw(amount);
+            System.out.println("Withdrawal from Fixed Deposit Account");
+        }
     }
     public void deposit(double amount) {
 
@@ -116,40 +127,26 @@ class FixedDepositAccount extends BankAccount {
 
      class BankAccountTester {
          public static void main(String[] args) {
-             BankAccount[]
-                     accounts = {
+             SavingsAccount sA=new SavingsAccount("SA001",10500.89,"John Smith",4.5);
+             sA.printInfo();
+             sA.deposit(4500);
 
-                     new
-                             SavingsAccount("SA001"
-                             , 1000.0
-                             , "John Smith"
-                             , 0.05
-                     ),        new
-                     CheckingAccount("CA001"
-                     , 2000.0
-                     , "Jane Austen"
-             ),        new
-                     FixedDepositAccount("FDA001"
-                     , 5000.0
-                     , "Bob Smith"
-                     , 12
-             )};
+             sA.withdraw(3500);
+             sA.applyInterest();
 
-             for (int i = 0; i < accounts.length; i++) {
+             System.out.println("***************************************");
 
-                 BankAccount account = accounts[i];
-                 System.out.println("Account Holder: "+ account.getAccountHolderName());
-                 account.deposit(500.0);
-                 account.withdraw(200.0);
-                 System.out.println("Current Balance: $"+ account.getBalance());
-                 if (account instanceof SavingsAccount) {
+             CheckingAccount cA=new CheckingAccount("CA001",5000.50,"Paul Lee");
+             cA.printInfo();
+             cA.deposit(2000);
+             cA.withdraw(800);
 
-                     ((SavingsAccount) account).applyInterest();
-                     System.out.println("Updated Balance after interest: $"+ account.getBalance());
-                 }
+             System.out.println("*****************************************");
 
-                 System.out.println();
-             }
+             FixedDepositAccount fD=new FixedDepositAccount("FDA001",15500.37,"John Moore",0);
+             fD.printInfo();
+             fD.deposit(2550);
+             fD.withdraw(5000);
         }
     }
 
