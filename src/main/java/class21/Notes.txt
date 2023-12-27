@@ -12,4 +12,5 @@ Why should we create abstract methods?
 Interfaces:
    Interface something which is common in two systems. It is
    like a contract that helps us know what type of methods
-   should be present in a class
+   should be present in a class for that class to be able to work
+   with other classes.

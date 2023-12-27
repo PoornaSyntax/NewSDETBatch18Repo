@@ -21,10 +21,15 @@ class MyDrawing extends Canvas {
         g.setColor(Color.PINK);
 
         for(int i=100;i<600;i=i+50) {
-            //Thread.sleep(1000);
-            g.fillOval(i, 500, 500, 500);
-        }
+            try {
+                Thread.sleep(1000);
+                g.fillOval(i, 200, 500, 500);
+            }
+             catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
 
-    }
 
-}
+    }}}
+
+

@@ -11,11 +11,13 @@ public abstract class Animal {
         this.color=color;
 
     }
-    public void sleep(){
+    public void sleep()
+    {
         System.out.println("Animals Sleep");
     }
     public abstract void speak();
-    public void printInfo(){
+    public void printInfo()
+    {
         System.out.println(name+" "+" "+color);
     }
 
@@ -23,7 +25,8 @@ public abstract class Animal {
 }
 
 class Dog extends Animal{
-    public Dog(String name,String color){
+    public Dog(String name,String color)
+    {
         super(name,color);
     }
 
@@ -31,18 +34,22 @@ class Dog extends Animal{
         System.out.println("Dogs like to eat meat");
     }
     public void speak(){
+
         System.out.println("Wuff wuff");
     }
 }
 
 class Cat extends Animal{
-    public Cat(String name, String color) {
+    public Cat(String name, String color)
+    {
         super(name, color);
     }
-    public void eat(){
+    public void eat()
+    {
         System.out.println("Cats like to eat fish");
     }
-    public void speak(){
-
+    public void speak()
+    {
+        System.out.println("Meow Meow");
     }
 }

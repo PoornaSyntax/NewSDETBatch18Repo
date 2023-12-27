@@ -33,7 +33,8 @@ public  class MusicPlayer {
 
 
     class MP3Player extends MusicPlayer {
-        public MP3Player(String currentTrack, int volume) {
+        public MP3Player(String currentTrack, int volume)
+        {
             super(currentTrack, volume);
         }
         @Override
