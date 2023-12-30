@@ -11,7 +11,7 @@ public class X {
         System.out.println("LaLaLa");
 
 }
-public class Z extends X {
+ class Z extends X {
     void prints() {
         System.out.println("Zzzz");
     }

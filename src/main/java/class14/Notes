@@ -7,7 +7,7 @@ Local Variable:
    the block of code like if-else statement, loop, switch-statement
    methods. They can only be accessed with-in the block of code.
 UpSide:
-   They occupy the momory least amount of time inside your computer.
+   They occupy the memory least amount of time inside your computer.
    you should always try to go with local variables.
 DownSide:
     They can only be accessed within the same block where they are created.
