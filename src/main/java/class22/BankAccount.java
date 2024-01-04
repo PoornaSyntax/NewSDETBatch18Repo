@@ -30,7 +30,7 @@ public class BankAccount {
         return balance;
     }
 
-    void setBalance(double balance){
-        this.balance=balance;
-    }
+   void setBalance(double balance){
+       this.balance=balance;
+   }
 }

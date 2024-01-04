@@ -4,7 +4,10 @@ import java.util.ArrayList;
 
 public class T1 {
     /*
-    Create an array list that wills tore 5 names in ot it.
+    Create an array list that wills tore 5 names in to it.
+    Find out whether the given ArrayList is empty or not?
+    Check whether the specific name is present in an ArrayList or not?
+    Find the size of your arraylist and print all values from htat.
      */
     public static void main(String[] args) {
 

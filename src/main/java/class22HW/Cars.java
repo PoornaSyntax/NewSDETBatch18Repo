@@ -12,12 +12,12 @@ public class Cars {
     cars.add("Ford");
     cars.add("Chevrelet");
     cars.add("Nissan");
-        System.out.println("Pirnting using For Loop");
+        System.out.println("Printing using For Loop");
     for(int i=0;i<cars.size();i++){
         System.out.println(cars.get(i));
     }
         System.out.println("**************************");
-        System.out.println("Printing using Enhabced for loop");
+        System.out.println("Printing using Enhanced for loop");
     for(String c:cars){
         System.out.println(c);
     }

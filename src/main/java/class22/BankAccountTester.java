@@ -6,5 +6,5 @@ public class BankAccountTester {
         System.out.println(b.getBalance());
         b.setBalance(25000);
         System.out.println(b.getBalance());
-    }
+        }
 }

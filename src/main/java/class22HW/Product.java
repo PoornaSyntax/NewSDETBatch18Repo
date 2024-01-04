@@ -16,10 +16,9 @@ public class Product {
 
     public String getProductName() {
         return productName;
-
     }
-
-    public void setProductName(String productName) {
+    public void setProductName(String productName)
+    {
         this.productName = productName;
     }
 
@@ -27,19 +26,23 @@ public class Product {
         return price;
     }
 
-    public void setPrice(double price) {
+    public void setPrice(double price)
+    {
         this.price = price;
     }
 
-    public int getStockQuantity() {
+    public int getStockQuantity()
+    {
         return stockQuantity;
     }
 
-    public void setStockQuantity(int stockQuantity) {
+    public void setStockQuantity(int stockQuantity)
+    {
         this.stockQuantity = stockQuantity;
     }
 
-    public String getProductID() {
+    public String getProductID()
+    {
         return productID;
     }
 

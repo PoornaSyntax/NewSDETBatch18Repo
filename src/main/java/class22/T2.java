@@ -11,13 +11,13 @@ public class T2 {
     public static void main(String[] args) {
         ArrayList<String> drinks = new ArrayList<>();
         drinks.add("Coffee");
-        drinks.add("Soda");
+        drinks.add("Tea");
         drinks.add("Juice");
         drinks.add("Beer");
-        drinks.add("Whisky");
+        drinks.add("Soda");
         for(int i=0;i<drinks.size();i++){
             String s = drinks.get(i);
-            if(s.contains("o")||s.contains("e")){
+            if(s.contains("a")||s.contains("e")){
                 drinks.set(i,"water");
             }
 
