@@ -20,7 +20,8 @@ class Animal{
     }
 }
 public class Dog extends Animal{
-    Dog(String name, String color,int age,double weight){
+    Dog(String name, String color,int age,double weight)
+    {
         super(name,color,age,weight);
     }
 

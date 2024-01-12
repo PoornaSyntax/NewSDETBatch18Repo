@@ -26,11 +26,13 @@ public abstract class Animal {
 
 class Dog extends Animal{
     public Dog(String name,String color)
+
     {
         super(name,color);
     }
 
-    public void eat(){
+    public void eat()
+    {
         System.out.println("Dogs like to eat meat");
     }
     public void speak(){
@@ -41,10 +43,12 @@ class Dog extends Animal{
 
 class Cat extends Animal{
     public Cat(String name, String color)
+
     {
         super(name, color);
     }
     public void eat()
+
     {
         System.out.println("Cats like to eat fish");
     }
@@ -53,3 +57,4 @@ class Cat extends Animal{
         System.out.println("Meow Meow");
     }
 }
+

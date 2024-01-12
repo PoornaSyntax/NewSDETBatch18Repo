@@ -11,7 +11,7 @@ public class ExcelFile1 implements FileReader{
 
 class TxtFile implements FileReader{
     public void read(){
-
+        System.out.println("Reading text file");
     }
 
 }
