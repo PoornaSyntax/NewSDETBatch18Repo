@@ -1,0 +1,12 @@
+Why we should learn hot to read write
+an excel file?
+  When we perform data driven testing, we need to
+  read/write data in excel files.
+What do we need to know for reading the
+data from any file?
+1.we must know the location of the file.
+2.we must know how to bring the data from the file into the
+script/java code.
+3.We must have a class to manipulate the file.
+To get the location of file in IntelliJ we can right-click
+we can click on copy path/reference.
